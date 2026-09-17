@@ -1,0 +1,30 @@
+Collecting matplotlib
+  Downloading matplotlib-3.11.2-cp312-cp312-win_amd64.whl.metadata (80 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.4.0-cp312-cp312-win_amd64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib)
+  Downloading fonttools-4.65.0-cp312-cp312-win_amd64.whl.metadata (127 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl.metadata (5.2 kB)
+Requirement already satisfied: numpy>=1.25 in c:\users\nurdm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages (from matplotlib) (2.3.5)
+Requirement already satisfied: packaging>=20.0 in c:\users\nurdm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages (from matplotlib) (26.3)
+Requirement already satisfied: pillow>=9 in c:\users\nurdm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages (from matplotlib) (12.3.0)
+Collecting pyparsing>=3 (from matplotlib)
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\nurdm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in c:\users\nurdm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+Downloading matplotlib-3.11.2-cp312-cp312-win_amd64.whl (9.3 MB)
+   ---------------------------------------- 9.3/9.3 MB 30.6 MB/s eta 0:00:00
+Downloading contourpy-1.4.0-cp312-cp312-win_amd64.whl (234 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.65.0-cp312-cp312-win_amd64.whl (2.5 MB)
+   ---------------------------------------- 2.5/2.5 MB 35.8 MB/s eta 0:00:00
+Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl (70 kB)
+Using cached pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Installing collected packages: pyparsing, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.65.0 kiwisolver-1.5.1 matplotlib-3.11.2 pyparsing-3.3.2
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquations\sssp_ablation\.venv_analysis\Scripts\python.exe -m pip install --upgrade pip

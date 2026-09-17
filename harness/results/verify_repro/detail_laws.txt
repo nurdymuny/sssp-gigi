@@ -1,0 +1,116 @@
+counts mismatches by arm: {'selected_grid': 38} | distinct cases: ['4', '9', '11', '14', '16', '21', '23', '25', '26', '27', '28', '30', '34', '40', '42', '44', '45', '46', '48']
+selection disagreements: 21 cases: ['4', '9', '10', '11', '12', '14', '16', '21', '23', '25', '26', '27', '28', '30', '34', '40', '42', '44', '45', '46', '48']
+counts-mismatch cases == selection-disagree cases: False
+cases in mismatch but not in disagree: []
+cases in disagree but not in mismatch: ['10', '12']
+
+case  fam                 ref_mult  new_mult  ref: best_ns vs new_choice_ns (margin%)   new: best_ns vs ref_choice_ns (margin%)
+   4  sparse_bimodal          0.5      0.75     138700 vs    138850 (+0.1%)      103100 vs    121650 (+18.0%)
+   9  clustered_uniform         4        16     533950 vs    569200 (+6.6%)      456450 vs    460600 (+0.9%)
+  10  clustered_near           16         8     357050 vs    359950 (+0.8%)      315800 vs    331850 (+5.1%)
+  11  clustered_skew          0.5      0.75     440950 vs    451600 (+2.4%)      392350 vs    402400 (+2.6%)
+  12  clustered_bimodal       1.5      0.25     350500 vs    357400 (+2.0%)      335900 vs    349250 (+4.0%)
+  14  clustered_integer      0.25       0.5     543650 vs    544450 (+0.1%)      521900 vs    613750 (+17.6%)
+  16  clustered_scale           2         4     515950 vs    534350 (+3.6%)      492200 vs    492600 (+0.1%)
+  21  sparse_zero            0.75       0.1     346900 vs    366950 (+5.8%)      323400 vs    380500 (+17.7%)
+  23  sparse_shuffle            4         2     218400 vs    277000 (+26.8%)      181650 vs    192650 (+6.1%)
+  25  clustered_uniform         2       1.5     501600 vs    538550 (+7.4%)      454050 vs    472400 (+4.0%)
+  26  clustered_near         0.75         8     379300 vs    381500 (+0.6%)      328450 vs    339650 (+3.4%)
+  27  clustered_skew         0.75       0.5     471000 vs    476900 (+1.3%)      398200 vs    408750 (+2.6%)
+  28  clustered_bimodal        16       1.5     404500 vs    412050 (+1.9%)      330850 vs    343000 (+3.7%)
+  30  clustered_integer      0.75       0.5     678550 vs    731950 (+7.9%)      479300 vs    483400 (+0.9%)
+  34  sparse_near               8         4     161900 vs    163100 (+0.7%)      134000 vs    136450 (+1.8%)
+  40  sparse_scale              4         2     241750 vs    242100 (+0.1%)      201150 vs    207700 (+3.3%)
+  42  clustered_near          1.5         8     425400 vs    451550 (+6.1%)      339100 vs    353200 (+4.2%)
+  44  clustered_bimodal       0.5         8     382500 vs    389400 (+1.8%)      331500 vs    336300 (+1.4%)
+  45  clustered_zero          0.1   0.03125     424800 vs    461350 (+8.6%)      370550 vs    376900 (+1.7%)
+  46  clustered_integer      0.25       0.5     590550 vs    599950 (+1.6%)      494450 vs    506350 (+2.4%)
+  48  clustered_scale         1.5         4     533550 vs    540700 (+1.3%)      471400 vs    496650 (+5.4%)
+
+samples width mismatches by (stage,arm): {('laws', 'selected_grid'): 336}
+
+sign flips (recorded ratio vs new ratio, ratio = std_binary/arm):
+case  fam                 src   arm             ratio_ref  ratio_new
+   3  sparse_skew        1333  binary            0.9893     1.0067
+   3  sparse_skew        1333  fourary           0.9465     1.0042
+   5  sparse_zero         667  mean_ring         1.0543     0.8064
+   8  sparse_scale       1333  binary            1.0231     0.9944
+   8  sparse_scale       1333  fourary           0.9768     1.0066
+  10  clustered_near      667  degree4           0.9717     1.0233
+  10  clustered_near      667  mean_map          1.0419     0.9747
+  10  clustered_near      667  mean_ring         1.0615     0.9861
+  12  clustered_bimodal   667  binary            0.9500     1.0026
+  12  clustered_bimodal   667  max_maxdegree     1.0121     0.9467
+  12  clustered_bimodal   667  mean_map          0.9784     1.0219
+  12  clustered_bimodal   667  selected_grid     1.0088     0.9668
+  12  clustered_bimodal  1333  max_maxdegree     0.9727     1.0027
+  12  clustered_bimodal  1333  selected_grid     0.9813     1.0502
+  14  clustered_integer  1333  caliber           0.9916     1.0207
+  15  clustered_shuffle  1333  degree4           1.0120     0.9736
+  15  clustered_shuffle  1333  fourary           0.9883     1.0441
+  19  sparse_skew        1333  binary            1.0125     0.9770
+  20  sparse_bimodal      667  caliber           1.0167     0.9904
+  25  clustered_uniform   667  degree4           1.0300     0.9853
+  26  clustered_near      667  caliber           1.0043     0.9343
+  26  clustered_near      667  degree4           0.9724     1.0422
+  26  clustered_near     1333  fourary           0.9823     1.1021
+  27  clustered_skew     1333  degree4           0.9532     1.0318
+  28  clustered_bimodal   667  binary            1.0845     0.9692
+  28  clustered_bimodal   667  caliber           1.0468     0.9788
+  28  clustered_bimodal   667  max_maxdegree     1.0113     0.9675
+  28  clustered_bimodal  1333  degree4           1.0150     0.9578
+  28  clustered_bimodal  1333  max_maxdegree     1.0302     0.9780
+  28  clustered_bimodal  1333  mean_map          1.0254     0.9993
+  28  clustered_bimodal  1333  mean_ring         1.0408     0.9974
+  29  clustered_zero      667  binary            0.8991     1.0192
+  30  clustered_integer   667  degree4           0.9798     1.0089
+  31  clustered_shuffle   667  caliber           1.1346     0.9355
+  31  clustered_shuffle  1333  degree4           1.0090     0.9943
+  32  clustered_scale     667  fourary           0.9918     1.0722
+  32  clustered_scale    1333  caliber           0.9482     1.0837
+  32  clustered_scale    1333  degree4           0.9551     1.0450
+  32  clustered_scale    1333  mean_degree       0.9884     1.0128
+  35  sparse_skew         667  binary            1.0175     0.8749
+  35  sparse_skew         667  fourary           0.8759     1.0055
+  35  sparse_skew        1333  binary            1.0207     0.9890
+  36  sparse_bimodal      667  caliber           0.9916     1.0135
+  37  sparse_zero         667  fourary           0.8249     1.0143
+  38  sparse_integer     1333  binary            0.9829     1.0006
+  41  clustered_uniform  1333  degree4           0.9939     1.0553
+  41  clustered_uniform  1333  mean_degree       0.9912     1.0652
+  43  clustered_skew      667  fourary           0.9557     1.0385
+  44  clustered_bimodal   667  caliber           1.0442     0.9973
+  44  clustered_bimodal   667  max_maxdegree     1.0599     0.9146
+  44  clustered_bimodal   667  mean_map          1.0620     0.9833
+  44  clustered_bimodal  1333  caliber           0.9837     1.0074
+  44  clustered_bimodal  1333  max_maxdegree     0.9856     1.0059
+  44  clustered_bimodal  1333  selected_grid     0.9750     1.0839
+  45  clustered_zero      667  degree4           0.9361     1.0053
+  45  clustered_zero      667  fourary           0.8582     1.0332
+  45  clustered_zero     1333  binary            0.9871     1.0300
+  45  clustered_zero     1333  degree4           1.0196     0.9879
+  46  clustered_integer  1333  binary            0.9524     1.0105
+flips: max |ratio_ref-1| = 0.17513756154068927 ; max |ratio_new-1| = 0.19363474122546098
+flips by family: {'clustered_bimodal': 19, 'sparse_skew': 6, 'clustered_near': 6, 'clustered_zero': 5, 'clustered_scale': 4, 'clustered_shuffle': 4, 'clustered_uniform': 3, 'clustered_integer': 3, 'clustered_skew': 2, 'sparse_zero': 2, 'sparse_bimodal': 2, 'sparse_scale': 2, 'sparse_integer': 1, 'sparse_near': 0, 'sparse_shuffle': 0, 'sparse_uniform': 0}
+
+family-group x arm: geomean ratio ref vs new, flips/n
+clustered  binary         n= 48  ref=1.0301  new=1.0318  rel=+0.0016  flips=5
+clustered  caliber        n= 48  ref=1.0876  new=1.0881  rel=+0.0005  flips=7
+clustered  degree4        n= 48  ref=0.9975  new=1.0038  rel=+0.0062  flips=12
+clustered  fourary        n= 48  ref=0.9573  new=1.0003  rel=+0.0449  flips=5
+clustered  max_maxdegree  n= 48  ref=1.3456  new=1.3360  rel=-0.0071  flips=6
+clustered  mean_degree    n= 48  ref=1.1940  new=1.2078  rel=+0.0116  flips=2
+clustered  mean_map       n= 48  ref=1.3504  new=1.3512  rel=+0.0006  flips=4
+clustered  mean_ring      n= 48  ref=1.3849  new=1.3669  rel=-0.0130  flips=2
+clustered  radix          n= 12  ref=1.5620  new=1.5848  rel=+0.0146  flips=0
+clustered  selected_grid  n= 48  ref=1.4578  new=1.4691  rel=+0.0078  flips=3
+sparse     binary         n= 48  ref=0.9439  new=0.9427  rel=-0.0013  flips=6
+sparse     caliber        n= 48  ref=1.0999  new=1.0970  rel=-0.0026  flips=2
+sparse     degree4        n= 48  ref=0.8430  new=0.8399  rel=-0.0036  flips=0
+sparse     fourary        n= 48  ref=0.8798  new=0.9259  rel=+0.0525  flips=4
+sparse     max_maxdegree  n= 48  ref=1.5278  new=1.5557  rel=+0.0183  flips=0
+sparse     mean_degree    n= 48  ref=1.4666  new=1.4884  rel=+0.0149  flips=0
+sparse     mean_map       n= 48  ref=1.5173  new=1.5558  rel=+0.0253  flips=0
+sparse     mean_ring      n= 48  ref=1.6077  new=1.6283  rel=+0.0128  flips=1
+sparse     radix          n= 12  ref=1.8995  new=1.9678  rel=+0.0359  flips=0
+sparse     selected_grid  n= 48  ref=1.7318  new=1.7512  rel=+0.0112  flips=0

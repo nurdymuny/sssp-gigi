@@ -1,0 +1,132 @@
+{
+  "views": 42,
+  "graphs": 15,
+  "method": "Graph fingerprints match primary inputs; distances recomputed by original Dijkstra. Reveal order uses quantized final distance, not measured execution events.",
+  "coordinate_sources": [
+    {
+      "region": "NY",
+      "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.NY.co.gz",
+      "sha256": "02547a628742164e02bd73f59e33a65d23dfac8fc54c09275c8b9169c38eafdf",
+      "uncompressed_sha256": "c39ec9b87c66d6e254f80cd3cfe20c7eb3c5ce4aca4063dc2efc228ab12fa95f"
+    },
+    {
+      "region": "BAY",
+      "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.BAY.co.gz",
+      "sha256": "67330855e3082dae03609f5b3012fe13ad2d982139d79c3040e77dad55ffd338",
+      "uncompressed_sha256": "5446a3b07e99a6fbf2aa091bd7095b55e4ba77bb94ac9865133b6b9af98af153"
+    },
+    {
+      "region": "COL",
+      "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.COL.co.gz",
+      "sha256": "6a88edbeaf55aa0b0f82daa528e9a3ca91c1beb16f6a3970d7908a49ab013a7f",
+      "uncompressed_sha256": "1c545e75ef66d25fb8a2478a5395b3b0bd16e7fb463236a97f25718c89226ba4"
+    }
+  ],
+  "fingerprints": [
+    {
+      "scenario": "sparse",
+      "seed": "42",
+      "fingerprint": "a0e9337942badb82",
+      "n": "10000",
+      "m": "45188"
+    },
+    {
+      "scenario": "sparse",
+      "seed": "1729",
+      "fingerprint": "ab6bc4e1898c27db",
+      "n": "10000",
+      "m": "44726"
+    },
+    {
+      "scenario": "sparse",
+      "seed": "2026",
+      "fingerprint": "2db15bafd28a3547",
+      "n": "10000",
+      "m": "44873"
+    },
+    {
+      "scenario": "million",
+      "seed": "42",
+      "fingerprint": "f3f1f00202f56af4",
+      "n": "1000000",
+      "m": "4501626"
+    },
+    {
+      "scenario": "million",
+      "seed": "1729",
+      "fingerprint": "24c0f572d9e65719",
+      "n": "1000000",
+      "m": "4498706"
+    },
+    {
+      "scenario": "million",
+      "seed": "2026",
+      "fingerprint": "8905b29a96654c8b",
+      "n": "1000000",
+      "m": "4498579"
+    },
+    {
+      "scenario": "dense",
+      "seed": "42",
+      "fingerprint": "91fb48477265c52f",
+      "n": "5000",
+      "m": "2499352"
+    },
+    {
+      "scenario": "dense",
+      "seed": "1729",
+      "fingerprint": "dc5c58846848fd62",
+      "n": "5000",
+      "m": "2500648"
+    },
+    {
+      "scenario": "dense",
+      "seed": "2026",
+      "fingerprint": "996ae1b73cc54091",
+      "n": "5000",
+      "m": "2497754"
+    },
+    {
+      "scenario": "grid",
+      "seed": "42",
+      "fingerprint": "01e78dbcf307c9a9",
+      "n": "10000",
+      "m": "39600"
+    },
+    {
+      "scenario": "grid",
+      "seed": "1729",
+      "fingerprint": "b4a7fc78406ec629",
+      "n": "10000",
+      "m": "39600"
+    },
+    {
+      "scenario": "grid",
+      "seed": "2026",
+      "fingerprint": "0cd684ab45988f0d",
+      "n": "10000",
+      "m": "39600"
+    },
+    {
+      "scenario": "ny",
+      "seed": "0",
+      "fingerprint": "712c17b058619a9d",
+      "n": "264346",
+      "m": "733846"
+    },
+    {
+      "scenario": "bay",
+      "seed": "0",
+      "fingerprint": "fce3d43aeba295cd",
+      "n": "321270",
+      "m": "800172"
+    },
+    {
+      "scenario": "col",
+      "seed": "0",
+      "fingerprint": "22f987c0690fd6e1",
+      "n": "435666",
+      "m": "1057066"
+    }
+  ]
+}

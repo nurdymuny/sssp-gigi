@@ -1,0 +1,4 @@
+﻿load_before=12
+load_after=9
+command=campaign.exe laws C:/Users/nurdm/OneDrive/Documents/GeodesicLeet_DavisManifold_DavisFieldEquations/sssp_ablation/results/verify_repro/laws
+exit=0

@@ -1,0 +1,41 @@
+DEGREE-GATE ABLATION on the paper's families, insertions, every arm exact
+gate class: LIVE = some edges pass, SATURATED = all pass (GATED==ALWAYS), DEAD = none pass (GATED==NEVER)
+
+graph            admit% d_bar class       NEVER  ALWAYS   GATED  INVERT  RANDOM   ADAPT
+----------------------------------------------------------------------------------------------------
+sparse/1000       12.4%   4.6 LIVE         1397    1695    1445    1623    1525    1414   scouts G/R 135/140
+dense/1000         0.0%  99.5 DEAD         3812    4940    3812    4940    3812    3812   scouts G/R 0/0
+grid/1000        100.0%   3.9 SATURATED    1241    1360    1360    1241    1360    1262   scouts G/R 621/621
+clustered/1000     0.0%  25.1 DEAD         2412    3230    2412    3230    2412    2412   scouts G/R 0/0
+road_like/1000     0.0%   6.0 DEAD         1404    1741    1404    1741    1404    1404   scouts G/R 0/0
+
+sparse/2000       13.4%   4.5 LIVE         2697    3264    2796    3156    2915    2744   scouts G/R 277/305
+dense/2000         0.0% 199.8 DEAD         8555   11286    8555   11286    8555    8555   scouts G/R 0/0
+grid/2000        100.0%   3.9 SATURATED    2506    2761    2761    2506    2761    2526   scouts G/R 1244/1244
+clustered/2000     0.0%  26.0 DEAD         5247    6660    5247    6660    5247    5247   scouts G/R 0/0
+road_like/2000     0.0%   6.0 DEAD         2790    3545    2790    3545    2790    2790   scouts G/R 0/0
+
+sparse/5000       13.5%   4.5 LIVE         6879    8326    7210    8026    7386    7035   scouts G/R 702/771
+dense/5000         0.0% 499.9 DEAD        24020   31686   24020   31686   24020   24020   scouts G/R 0/0
+grid/5000        100.0%   3.9 SATURATED    6320    6983    6983    6320    6983    6360   scouts G/R 3164/3164
+clustered/5000     0.0%  28.5 DEAD        15349   18825   15349   18825   15349   15349   scouts G/R 0/0
+road_like/5000     0.0%   6.0 DEAD         7001    8793    7001    8793    7001    7001   scouts G/R 0/0
+
+sparse/10000      13.6%   4.5 LIVE        13603   16343   14195   15700   14736   13861   scouts G/R 1431/1549
+dense/10000        0.0% 999.8 DEAD        51130   65879   51130   65879   51130   51130   scouts G/R 0/0
+grid/10000       100.0%   4.0 SATURATED   12688   14031   14031   12688   14031   12736   scouts G/R 6320/6320
+clustered/10000    0.0%  32.4 DEAD        34037   39885   34037   39885   34037   34037   scouts G/R 0/0
+road_like/10000    0.0%   6.0 DEAD        13926   17888   13926   17888   13926   13926   scouts G/R 0/0
+
+====================================================================================================
+LIVE configurations (the only rows that test the selector): 4
+  sparse/1000    NEVER   1397  ALWAYS   1695  GATED   1445  INVERT   1623  RANDOM   1525  ADAPT   1414   order: never < gated < random < invert < always
+  sparse/2000    NEVER   2697  ALWAYS   3264  GATED   2796  INVERT   3156  RANDOM   2915  ADAPT   2744   order: never < gated < random < invert < always
+  sparse/5000    NEVER   6879  ALWAYS   8326  GATED   7210  INVERT   8026  RANDOM   7386  ADAPT   7035   order: never < gated < random < invert < always
+  sparse/10000   NEVER  13603  ALWAYS  16343  GATED  14195  INVERT  15700  RANDOM  14736  ADAPT  13861   order: never < gated < random < invert < always
+
+  on live rows: GATED < ALWAYS 4/4, GATED < RANDOM(edge-matched) 4/4, GATED < INVERTED 4/4, GATED < NEVER 0/4, ADAPTIVE <= GATED 4/4
+  dead or saturated rows: 16; of those, NEVER < ALWAYS in 16 (scouting costs insertions wherever it happens)
+
+  GATED < RANDOM and GATED < INVERTED on live rows is the selection evidence.
+  GATED < NEVER on any row would be the first sign the lookahead pays on this metric.

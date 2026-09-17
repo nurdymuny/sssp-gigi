@@ -1,0 +1,9 @@
+potential control complete sparse 42
+potential control complete clustered 42
+potential control complete grid 42
+potential control complete sparse 1729
+potential control complete clustered 1729
+potential control complete grid 1729
+potential control complete sparse 2026
+potential control complete clustered 2026
+potential control complete grid 2026

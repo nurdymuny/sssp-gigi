@@ -1,0 +1,3 @@
+circulation measured_vertices=4 potential=[("2", 3.75), ("1", 1.75), ("3", 0.75), ("0", -6.25)] notes=["potential = HodgeRank-style least-squares ranking (discrete Dirichlet/harmonic extension of the flow); magnetic_gap = normalized magnetic-Laplacian smallest eigenvalue (U(1) gauge flux witness, cousin of spectral_gauge_gap).", "charge γ controls flux sensitivity; very large γ × long cycles can alias past 2π — sweep γ if the gap looks saturated (γ=1 used)."]
+PASS all edge identities/weights, parallel arcs, isolated vertex, and all-source distances after mmap reload
+ingest_index_circulation_snapshot_ns=26652200 reopen_extract_verify_ns=16217000

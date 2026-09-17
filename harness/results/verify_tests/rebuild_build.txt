@@ -1,0 +1,9 @@
+   Compiling zerocopy v0.8.33
+   Compiling cfg-if v1.0.4
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling sssp_rust v0.1.0 (C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquations\sssp_ablation\results\verify_tests\rebuild_root)
+    Finished `release` profile [optimized] target(s) in 17.00s

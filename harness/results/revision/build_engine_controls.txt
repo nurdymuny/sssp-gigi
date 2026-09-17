@@ -1,0 +1,361 @@
+   Compiling cfg-if v1.0.4
+   Compiling proc-macro2 v1.0.105
+   Compiling unicode-ident v1.0.22
+   Compiling quote v1.0.43
+   Compiling windows-link v0.2.1
+   Compiling version_check v0.9.5
+   Compiling typenum v1.20.1
+   Compiling smallvec v1.16.1
+   Compiling subtle v2.6.1
+   Compiling autocfg v1.5.1
+   Compiling bytes v1.12.1
+   Compiling getrandom v0.4.3
+   Compiling pin-project-lite v0.2.17
+   Compiling scopeguard v1.2.0
+   Compiling memchr v2.8.3
+   Compiling parking_lot_core v0.9.12
+   Compiling getrandom v0.2.17
+   Compiling windows-sys v0.61.2
+   Compiling itoa v1.0.18
+   Compiling rand_core v0.6.4
+   Compiling futures-core v0.3.34
+   Compiling stable_deref_trait v1.2.1
+   Compiling lock_api v0.4.14
+   Compiling shlex v2.0.1
+   Compiling log v0.4.34
+   Compiling find-msvc-tools v0.1.12
+   Compiling generic-array v0.14.7
+   Compiling once_cell v1.21.4
+   Compiling num-traits v0.2.19
+   Compiling futures-sink v0.3.34
+   Compiling libc v0.2.189
+   Compiling http v1.5.0
+   Compiling pkg-config v0.3.34
+   Compiling cpufeatures v0.2.17
+   Compiling jobserver v0.1.35
+   Compiling zerocopy v0.8.33
+   Compiling tracing-core v0.1.36
+   Compiling slab v0.4.12
+   Compiling parking_lot v0.12.5
+   Compiling writeable v0.6.4
+   Compiling cc v1.4.6
+   Compiling litemap v0.8.3
+   Compiling httparse v1.10.1
+   Compiling serde_core v1.0.229
+   Compiling icu_properties_data v2.1.2
+   Compiling getrandom v0.3.4
+   Compiling syn v3.0.5
+   Compiling syn v2.0.114
+   Compiling tracing v0.1.44
+   Compiling http-body v1.1.0
+   Compiling futures-task v0.3.34
+   Compiling percent-encoding v2.3.2
+   Compiling futures-io v0.3.34
+   Compiling rustversion v1.0.23
+   Compiling icu_normalizer_data v2.1.1
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling windows_x86_64_msvc v0.52.6
+   Compiling radium v0.7.0
+   Compiling crossbeam-utils v0.8.23
+   Compiling tower-service v0.3.3
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling inout v0.1.4
+   Compiling digest v0.10.7
+   Compiling atomic-waker v1.1.2
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling cipher v0.4.4
+   Compiling zstd-sys v2.1.0+zstd.1.5.7
+   Compiling fnv v1.0.7
+   Compiling tap v1.0.1
+   Compiling ucd-trie v0.1.7
+   Compiling crossbeam-epoch v0.9.21
+   Compiling try-lock v0.2.5
+   Compiling want v0.3.1
+   Compiling wyz v0.5.1
+   Compiling sha1 v0.10.7
+   Compiling rand_core v0.9.5
+   Compiling bzip2-sys v0.1.13+1.0.8
+   Compiling form_urlencoded v1.2.2
+   Compiling num-integer v0.1.47
+   Compiling futures-channel v0.3.34
+   Compiling sync_wrapper v1.0.2
+   Compiling windows-result v0.4.1
+   Compiling windows-strings v0.5.1
+   Compiling pest v2.9.1
+   Compiling httpdate v1.0.3
+   Compiling thiserror v2.0.20
+   Compiling zmij v1.0.23
+   Compiling crossbeam-deque v0.8.8
+   Compiling zeroize v1.9.0
+   Compiling native-tls v0.2.18
+   Compiling bytemuck v1.25.2
+   Compiling funty v2.0.0
+   Compiling tower-layer v0.3.3
+   Compiling zstd-safe v5.0.2+zstd.1.5.2
+   Compiling serde v1.0.229
+   Compiling crc32fast v1.5.2
+   Compiling windows-registry v0.6.1
+   Compiling rand_chacha v0.9.0
+   Compiling windows-targets v0.52.6
+   Compiling bitvec v1.1.1
+   Compiling hmac v0.12.1
+   Compiling http-body-util v0.1.5
+   Compiling synstructure v0.13.2
+   Compiling pest_meta v2.9.1
+   Compiling num-complex v0.4.6
+   Compiling base64ct v1.8.3
+   Compiling once_cell_polyfill v1.70.2
+   Compiling rayon-core v1.13.0
+   Compiling ipnet v2.12.2
+   Compiling simd-adler32 v0.3.10
+   Compiling anstyle v1.0.14
+   Compiling base64 v0.22.1
+   Compiling utf8parse v0.2.2
+   Compiling utf8_iter v1.0.4
+   Compiling paste v1.0.15
+   Compiling adler2 v2.0.1
+   Compiling serde_json v1.0.151
+   Compiling pest_generator v2.9.1
+   Compiling miniz_oxide v0.9.1
+   Compiling anstyle-parse v0.2.7
+   Compiling password-hash v0.4.2
+   Compiling rand v0.9.5
+   Compiling safe_arch v0.7.4
+   Compiling encoding_rs v0.8.41
+   Compiling aes v0.8.4
+   Compiling sha2 v0.10.9
+   Compiling matrixmultiply v0.3.11
+   Compiling socket2 v0.6.5
+   Compiling mio v1.2.3
+   Compiling schannel v0.1.29
+   Compiling anstyle-wincon v3.0.11
+   Compiling anstyle-query v1.1.5
+   Compiling tokio-macros v2.7.2
+   Compiling displaydoc v0.2.7
+   Compiling futures-macro v0.3.34
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling multiversion-macros v0.9.0
+   Compiling ff v0.13.1
+   Compiling ryu v1.0.23
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.1
+   Compiling zerovec-derive v0.11.2
+   Compiling futures-util v0.3.34
+   Compiling colorchoice v1.0.5
+   Compiling time-core v0.1.9
+   Compiling tokio v1.53.1
+   Compiling powerfmt v0.2.0
+   Compiling byteorder v1.5.0
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling bitflags v2.13.2
+   Compiling mime v0.3.17
+   Compiling num-conv v0.2.2
+   Compiling data-encoding v2.11.1
+   Compiling deranged v0.5.8
+   Compiling multiversion v0.9.0
+   Compiling anstream v0.6.21
+   Compiling group v0.13.0
+   Compiling pest_derive v2.9.1
+   Compiling zerofrom v0.1.8
+   Compiling pbkdf2 v0.11.0
+   Compiling wide v0.7.33
+   Compiling yoke v0.8.1
+   Compiling flate2 v1.1.10
+   Compiling zerotrie v0.2.3
+   Compiling tungstenite v0.29.0
+   Compiling bzip2 v0.4.4
+   Compiling time v0.3.55
+   Compiling windows-sys v0.59.0
+   Compiling num-bigint v0.4.8
+   Compiling rand_chacha v0.3.1
+   Compiling universal-hash v0.5.1
+   Compiling approx v0.5.1
+   Compiling aho-corasick v1.1.5
+   Compiling nibble_vec v0.1.0
+   Compiling core_detect v1.0.0
+   Compiling regex-syntax v0.8.11
+   Compiling simdutf8 v0.1.5
+   Compiling heck v0.5.0
+   Compiling constant_time_eq v0.1.5
+   Compiling strsim v0.11.1
+   Compiling keccak v0.1.6
+   Compiling either v1.18.0
+   Compiling error-code v3.4.0
+   Compiling zerovec v0.11.5
+   Compiling clap_lex v1.1.1
+   Compiling multiversion_no_op v1.0.0
+   Compiling serde_urlencoded v0.7.1
+   Compiling endian-type v0.1.2
+   Compiling opaque-debug v0.3.1
+   Compiling rawpointer v0.2.1
+   Compiling rayon v1.12.0
+   Compiling clap_builder v4.5.60
+   Compiling py_literal v0.4.0
+   Compiling radix_trie v0.2.1
+   Compiling polyval v0.6.2
+   Compiling clap_derive v4.5.55
+   Compiling sha3 v0.10.9
+   Compiling tinystr v0.8.2
+   Compiling potential_utf v0.1.4
+   Compiling clipboard-win v5.4.1
+   Compiling fd-lock v4.0.4
+   Compiling icu_collections v2.1.1
+   Compiling simba v0.9.1
+   Compiling icu_locale_core v2.1.1
+   Compiling regex-automata v0.4.18
+   Compiling rand v0.8.5
+   Compiling tokio-util v0.7.19
+   Compiling tower v0.5.3
+   Compiling icu_provider v2.1.1
+   Compiling tokio-native-tls v0.3.1
+   Compiling icu_normalizer v2.1.1
+   Compiling icu_properties v2.1.2
+   Compiling h2 v0.4.19
+   Compiling tokio-tungstenite v0.29.0
+   Compiling pairing v0.23.0
+   Compiling axum-core v0.5.6
+   Compiling nalgebra-macros v0.2.2
+   Compiling home v0.5.12
+   Compiling serde_path_to_error v0.1.20
+   Compiling windows-sys v0.52.0
+   Compiling kem v0.3.0-pre.0
+   Compiling idna_adapter v1.2.1
+   Compiling rustls-pki-types v1.15.1
+   Compiling idna v1.1.0
+   Compiling num-rational v0.4.2
+   Compiling ctr v0.9.2
+   Compiling aead v0.5.2
+   Compiling dbl v0.3.2
+   Compiling ordered-float v3.9.2
+   Compiling hybrid-array v0.2.3
+   Compiling url v2.5.8
+   Compiling fastrand v2.5.0
+   Compiling num_cpus v1.17.0
+   Compiling matchit v0.8.4
+   Compiling unicode-width v0.1.14
+   Compiling unicode-segmentation v1.13.3
+   Compiling instant-distance v0.6.1
+   Compiling tower-http v0.6.11
+   Compiling ml-kem v0.2.3
+   Compiling tempfile v3.27.0
+   Compiling cmac v0.7.2
+   Compiling aes-gcm-siv v0.11.1
+   Compiling regex v1.13.1
+   Compiling rustyline v14.0.0
+   Compiling clap v4.5.60
+   Compiling bls12_381 v0.8.0
+   Compiling uuid v1.26.1
+   Compiling roaring v0.10.12
+   Compiling hkdf v0.12.4
+   Compiling memmap2 v0.9.11
+   Compiling nalgebra v0.33.3
+   Compiling hyper v1.11.1
+   Compiling zstd v0.11.2+zstd.1.5.2
+   Compiling zip v0.6.6
+   Compiling npyz v0.8.4
+   Compiling hyper-util v0.1.20
+   Compiling hyper-tls v0.6.0
+   Compiling axum v0.8.9
+   Compiling reqwest v0.12.28
+   Compiling gigi v0.1.0 (C:\Users\nurdm\OneDrive\Documents\gigi)
+warning: unused import: `GroupEncoding`
+   --> C:\Users\nurdm\OneDrive\Documents\gigi\src\pairing_delegation.rs:159:27
+    |
+159 | use group::{Curve, Group, GroupEncoding};
+    |                           ^^^^^^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `FieldDef`
+ --> C:\Users\nurdm\OneDrive\Documents\gigi\src\join.rs:8:34
+  |
+8 | use crate::types::{BundleSchema, FieldDef, Record, Value};
+  |                                  ^^^^^^^^
+
+warning: unreachable statement
+    --> C:\Users\nurdm\OneDrive\Documents\gigi\src\parser.rs:5583:17
+     |
+5579 | /                     return Err(
+5580 | |                         "CHERN_CLASS GROUP clause requires the `gauge` feature".into(),
+5581 | |                     );
+     | |_____________________- any code following this expression is unreachable
+5582 |                   }
+5583 |                   continue;
+     |                   ^^^^^^^^^ unreachable statement
+     |
+     = note: `#[warn(unreachable_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Group`
+   --> C:\Users\nurdm\OneDrive\Documents\gigi\src\pairing_delegation.rs:159:20
+    |
+159 | use group::{Curve, Group, GroupEncoding};
+    |                    ^^^^^
+
+warning: variable does not need to be mutable
+  --> C:\Users\nurdm\OneDrive\Documents\gigi\src\ml\circulation.rs:90:9
+   |
+90 |     let mut node_of = |labels: &mut Vec<String>, idx: &mut std::collections::HashMap<String, usize>, s: String| -> usize {
+   |         ----^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+    --> C:\Users\nurdm\OneDrive\Documents\gigi\src\parser.rs:5543:13
+     |
+5543 |         let mut group: Option<()> = None;
+     |             ----^^^^^
+     |             |
+     |             help: remove this `mut`
+
+warning: multiple methods are never used
+    --> C:\Users\nurdm\OneDrive\Documents\gigi\src\parser.rs:2974:8
+     |
+2266 | impl Parser {
+     | ----------- methods in this implementation
+...
+2974 |     fn parse_encryption_mode_after_keyword(
+     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4542 |     fn parse_seed_bracket(&mut self) -> Result<SeedRange, String> {
+     |        ^^^^^^^^^^^^^^^^^^
+...
+4552 |     fn parse_loop_transport_output_id(&mut self) -> Result<LoopTransportOutputId, String> {
+     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4565 |     fn parse_loop_transport_return_id(&mut self) -> Result<LoopTransportReturnId, String> {
+     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4581 |     fn parse_loop_transport_return_list(&mut self) -> Result<Vec<LoopTransportReturnId>, String> {
+     |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4598 |     fn parse_sham_block(&mut self) -> Result<ShamBlock, String> {
+     |        ^^^^^^^^^^^^^^^^
+...
+4640 |     fn expect_bool_word(&mut self) -> Result<bool, String> {
+     |        ^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling sssp_rust v0.1.0 (C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquations\sssp_ablation)
+warning: `gigi` (lib) generated 7 warnings (run `cargo fix --lib -p gigi` to apply 4 suggestions)
+warning: unused `IndexCoverage` that must be used
+  --> src\bin\substrate.rs:56:9
+   |
+56 |         e.add_index("edges", "vertex_a").unwrap();
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: an index on an mmap-backed bundle covers the overlay only; the               mmap base contributes no entries. Handle OverlayOnly explicitly               before treating this index as complete — see TDD-IDX F-4.
+   = note: `#[warn(unused_must_use)]` (part of `#[warn(unused)]`) on by default
+help: use `let _ = ...` to ignore the resulting value
+   |
+56 |         let _ = e.add_index("edges", "vertex_a").unwrap();
+   |         +++++++
+
+warning: `sssp_rust` (bin "substrate") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 4m 15s

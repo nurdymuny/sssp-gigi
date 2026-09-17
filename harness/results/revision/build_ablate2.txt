@@ -1,0 +1,2 @@
+   Compiling sssp_rust v0.1.0 (C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquations\sssp_ablation)
+    Finished `release` profile [optimized] target(s) in 9.64s

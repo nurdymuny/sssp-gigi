@@ -1,0 +1,2 @@
+case,stage,family,n,m,seed,mean,median,max,sd,degree,max_degree,generation_ns,feature_ns,fingerprint
+1,smoke,sparse_fast,100,469,42,51.552302111923666,54.394396656336156,99.674007955778833,28.148714661002860,4.690000000,8,0,41000,8c4665120593a64b

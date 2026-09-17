@@ -1,0 +1,50 @@
+{
+  "purpose": "Independent re-run of the smoke panel (plus laws as a supplementary timed panel) for case-by-case comparison against results/revision. Nothing under results/revision, src, data, or the GIGI repo was modified.",
+  "machine": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+    "os": "Microsoft Windows 11 Pro",
+    "ram_bytes": 68328595456,
+    "same_as_environment_json": true,
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+    "cargo": "cargo 1.92.0 (344c4567c 2025-10-21)"
+  },
+  "build": {
+    "command": "cargo build --manifest-path <sssp_ablation>/portable/Cargo.toml --release --bin campaign",
+    "CARGO_TARGET_DIR": "<sssp_ablation>/results/verify_repro/target",
+    "started": "2026-09-16T17:36:29.8273928-07:00",
+    "ended": "2026-09-16T17:36:49.8058442-07:00",
+    "exit": 0,
+    "load_percent_before": 18,
+    "binary": "results/verify_repro/target/release/campaign.exe",
+    "binary_bytes": 477696,
+    "binary_sha256": "0DE9F31D46143037D9BF208EB5C2A13B1FA3DDFD944B09F41883166E6F75D6EB",
+    "recorded_binary_sha256_environment_json": "69BB8504862E9D60E2E6FDA9F71ED4E1D17B64B6940D21605EC4A76E319433E5",
+    "recorded_binary_bytes": 477696,
+    "note": "Different hash from the recorded binary (portable manifest, different absolute target path, different link timestamp); same size. Behavioural equivalence is established below by byte-identical smoke counts.csv and exact deterministic-arm match on laws."
+  },
+  "panels": {
+    "smoke": {
+      "command": "campaign.exe smoke results/verify_repro/smoke",
+      "started": "2026-09-16T17:37:09.0581407-07:00",
+      "completed": "2026-09-16T17:37:09.2011907-07:00",
+      "wall_seconds": 0.143,
+      "exit": 0,
+      "load_percent_before": 24,
+      "load_percent_after": 33,
+      "recorded_reference": "results/revision/smoke (files stamped 2026-09-16 16:30, no stdout/started/completed present; final_manifest.json sha256 for smoke/counts.csv = 1ece6e81...)"
+    },
+    "laws": {
+      "command": "campaign.exe laws results/verify_repro/laws",
+      "started": "2026-09-16T17:37:40.2961633-07:00",
+      "completed": "2026-09-16T17:37:46.6005213-07:00",
+      "wall_seconds": 6.304,
+      "exit": 0,
+      "load_percent_before": 12,
+      "load_percent_after": 9,
+      "recorded_reference": "results/revision/laws (started 16:32:42.47, completed 16:32:49.93, 7.46 s; final_manifest.json sha256 for laws/counts.csv = ef589003...)"
+    }
+  },
+  "concurrency": "Panels were run one at a time; no cargo build, rendering, or other campaign process during either timed run. Background processes present (OneDrive sync, Snap Camera, msedge, ChatGPT) - the OS was not idle, as the protocol itself allows.",
+  "comparison_scripts": ["compare_panel.py", "detail_laws.py"],
+  "comparison_outputs": ["compare_smoke.json", "compare_smoke.txt", "compare_laws.json", "compare_laws.txt", "detail_laws.txt"]
+}

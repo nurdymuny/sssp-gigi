@@ -1,0 +1,1 @@
+Algorithm-only source snapshot matching the primary measured revision.rs and campaign.rs hashes. The manifest intentionally removes the unused optional database dependency. Later changes to revision.rs add tests only; all measured solver code is preserved here.

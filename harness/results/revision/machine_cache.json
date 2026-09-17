@@ -1,0 +1,8 @@
+{
+  "observed_date": "2026-09-16",
+  "source": "Get-CimInstance Win32_Processor | Select-Object Name,L3CacheSize",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+  "L3CacheSize_KiB": 24576,
+  "L3_MiB": 24,
+  "note": "Read during manuscript revision; original timing environment metadata remains unchanged."
+}

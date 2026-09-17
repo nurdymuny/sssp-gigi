@@ -1,0 +1,12 @@
+{
+  "primary_panel_files_unchanged": 42,
+  "retained_layout_cases": 29,
+  "excluded_layout_case": 29,
+  "raw_samples_preserved": true,
+  "selection_changes": 21,
+  "selection_cases": 48,
+  "mutation_output": "../revision_followup_checks/mutation_results.json",
+  "driver_smoke": "../revision_driver_smoke/smoke",
+  "pdf_pages": 15,
+  "visual_check": "All 15 pages inspected"
+}

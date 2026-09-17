@@ -1,0 +1,180 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(../davis_manifold_sssp_v3.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+)) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+))) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+))) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty)
+
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty)))
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg))
+
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/numbers.tex)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\davis_manifold_sssp_v3.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg))
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\davis_manifold_sssp_v3.out)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\davis_manifold_sssp_v3.out)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+[1{C:/Users/nurdm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/nu
+rdm/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/nurdm/
+AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/nurdm/AppD
+ata/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [2{C:/Users/nurdm/
+AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/nurdm/
+AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+(C:\Users\nurdm\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd) [3]
+[4]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/instances.tex) [5]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/core_table.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/core_findings.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/mechanism_table.tex) [6]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/density_findings.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/law_findings.tex) [7 <C:/Users/nurdm/OneDrive/Documents/GeodesicLeet
+_DavisManifold_DavisFieldEquations/figs_v3/core.pdf>]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/large_table.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/large_findings.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/layout_findings.tex) [8 <C:/Users/nurdm/OneDrive/Documents/GeodesicL
+eet_DavisManifold_DavisFieldEquations/figs_v3/density.pdf>]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/gate_table.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/gate_findings.tex) [9]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/amortization.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/policy_findings.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/substrate.tex) [10]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/k_findings.tex)
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/potential.tex) [11] [12]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\figs_v3/checks.tex) [13] [14]
+(C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquatio
+ns\davis_manifold_sssp_v3.aux) )<C:/Users/nurdm/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmbx10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmbx12.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmex10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi8.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmr10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/lm/lmr12.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmr17.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmr7.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmr8.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmri10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy8.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/lm/lmtt10.pfb><C:/Users/nurdm/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_
+DavisFieldEquations\davis_manifold_sssp_v3.pdf (14 pages, 415331 bytes).
+Transcript written on C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManif
+old_DavisFieldEquations\davis_manifold_sssp_v3.log.

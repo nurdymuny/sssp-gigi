@@ -1,0 +1,33 @@
+   Compiling zerocopy v0.8.57
+   Compiling cfg-if v1.0.5
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling sssp_rust v0.1.0 (C:\Users\nurdm\OneDrive\Documents\GeodesicLeet_DavisManifold_DavisFieldEquations\sssp_ablation\portable)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.94s
+     Running unittests ..\src\lib.rs (C:/Users/nurdm/OneDrive/Documents/GeodesicLeet_DavisManifold_DavisFieldEquations/sssp_ablation/results/verify_tests/portable_target\debug\deps\sssp_rust-c91f39d8fb2a50ab.exe)
+
+running 6 tests
+test revision::tests::all_zero_graph ... ok
+test revision::tests::duplicate_mechanisms ... ok
+test revision::tests::zero_cycles_parallel_and_budget ... ok
+test revision::tests::exact_admission_ties_and_complement ... ok
+test revision::tests::irrelevant_component_and_scaling ... ok
+test revision::tests::independent_bellman_ford_all_arms ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+     Running unittests ..\src\bin\ablate2.rs (C:/Users/nurdm/OneDrive/Documents/GeodesicLeet_DavisManifold_DavisFieldEquations/sssp_ablation/results/verify_tests/portable_target\debug\deps\ablate2-971fbeaad5bb6f08.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests ..\src\bin\campaign.rs (C:/Users/nurdm/OneDrive/Documents/GeodesicLeet_DavisManifold_DavisFieldEquations/sssp_ablation/results/verify_tests/portable_target\debug\deps\campaign-41ea61aa5c7ef510.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

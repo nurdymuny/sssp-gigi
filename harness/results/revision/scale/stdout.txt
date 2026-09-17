@@ -1,0 +1,9 @@
+done case 1: scale sparse_fast n=10000 m=45135 seed=42
+done case 2: scale sparse_fast n=100000 m=450557 seed=42
+done case 3: scale sparse_fast n=1000000 m=4501626 seed=42
+done case 4: scale sparse_fast n=10000 m=44550 seed=1729
+done case 5: scale sparse_fast n=100000 m=448748 seed=1729
+done case 6: scale sparse_fast n=1000000 m=4498706 seed=1729
+done case 7: scale sparse_fast n=10000 m=44758 seed=2026
+done case 8: scale sparse_fast n=100000 m=449260 seed=2026
+done case 9: scale sparse_fast n=1000000 m=4498579 seed=2026

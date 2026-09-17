@@ -1,0 +1,23 @@
+[
+  {
+    "name": "NY",
+    "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.NY.gr.gz",
+    "compressed_bytes": 3667907,
+    "sha256_gz": "7b2446c7ffe6179efbc42af6812448e8cb782f12968ca2bb1d50d979343056d4",
+    "sha256_gr": "37f5b3eff82330850466956b6c036a8ab8551512bdc7509edca1d4c6cf943fa3"
+  },
+  {
+    "name": "BAY",
+    "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.BAY.gr.gz",
+    "compressed_bytes": 4130672,
+    "sha256_gz": "630c4a96869b3ecdd631ceb0f63923fb954ee4c7c26d983863612e2c4442462e",
+    "sha256_gr": "75a1a78d1f1bd1d8d86b2dc81b0c2ac30f701e078c514c9f9b953130b83f979e"
+  },
+  {
+    "name": "COL",
+    "url": "https://www.diag.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.COL.gr.gz",
+    "compressed_bytes": 5753354,
+    "sha256_gz": "638bb7412a943b95d0a39211fa741c9c54a8a55a3992281175f950b08a983543",
+    "sha256_gr": "2d5510bdc742cf027c0ce90f5d9eebeace29c7431f54f31be015d2ddac070343"
+  }
+]

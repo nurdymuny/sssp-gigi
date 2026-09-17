@@ -1,0 +1,22 @@
+target/
+*_target/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.venv_analysis/
+
+# Uncompressed DIMACS expansions: regenerate with harness/download_roads.py
+*.gr
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,3 @@
+done case 1: roads NY n=264346 m=733846 seed=0
+done case 2: roads BAY n=321270 m=800172 seed=0
+done case 3: roads COL n=435666 m=1057066 seed=0

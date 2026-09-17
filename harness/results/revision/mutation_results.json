@@ -1,0 +1,14 @@
+[
+  {
+    "mutation": "control",
+    "exit_code": 0
+  },
+  {
+    "mutation": "remove_skip",
+    "exit_code": 101
+  },
+  {
+    "mutation": "remove_heavy_dedup",
+    "exit_code": 101
+  }
+]

@@ -1,0 +1,215 @@
+STEP 1  Popoviciu degeneracy, computed by gigi::curvature::scalar_curvature
+  two records, weights 1 and 100     K = 0.250000
+  two records, weights 50 and 51     K = 0.250000
+  two records, weights 7 and 7.001   K = 0.250000
+  three records, spread 1/50/100   K = 0.166672
+  three records, spread 49/50/51   K = 0.166667
+  -> at n=2 the statistic is constant; it starts carrying weight information at n=3.
+
+==============================================================================
+sparse/1000
+STEP 2  1-hop instrument: 248 of 1000 vertices have <=2 samples; 123 have K == 0.25 exactly; 125 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 25 (min 2, max 59); 12 at K == 0.25; K ranges 0.0521 .. 0.2500
+        arm              pushes   scouts
+        DEGREE             1445      135   (her gate)
+        K low, 1-hop       1524      118   (old instrument)
+        K low, 2-hop       1498      109   (fixed instrument)
+        K permuted         1492      132   STEP 5 mechanism removed
+        K high, 2-hop      1443      121   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 568 edges
+==============================================================================
+grid/1000
+STEP 2  1-hop instrument: 4 of 961 vertices have <=2 samples; 4 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 20 (min 8, max 20); 0 at K == 0.25; K ranges 0.0450 .. 0.1610
+        arm              pushes   scouts
+        DEGREE             1309      590   (her gate)
+        K low, 1-hop       1309      590   (old instrument)
+        K low, 2-hop       1309      590   (fixed instrument)
+        K permuted         1309      590   STEP 5 mechanism removed
+        K high, 2-hop      1309      590   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 3720 edges
+==============================================================================
+clustered/1000
+STEP 2  1-hop instrument: 0 of 1000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 653 (min 352, max 972); 0 at K == 0.25; K ranges 0.0080 .. 0.0263
+        arm              pushes   scouts
+        DEGREE             2412        0   (her gate)
+        K low, 1-hop       2412        0   (old instrument)
+        K low, 2-hop       2412        0   (fixed instrument)
+        K permuted         2412        0   STEP 5 mechanism removed
+        K high, 2-hop      2412        0   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 25061 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 2412; ALWAYS-scout pushes 3230 (661 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%     2578     2696     2515     2817   73
+           10%     2708     2716     2553     3040   133
+           25%     3069     2967     2845     3225   276
+           50%     3344     3257     3047     3285   496
+==============================================================================
+road_like/1000
+STEP 2  1-hop instrument: 0 of 1000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 42 (min 42, max 42); 0 at K == 0.25; K ranges 0.0366 .. 0.1033
+        arm              pushes   scouts
+        DEGREE             1404        0   (her gate)
+        K low, 1-hop       1404        0   (old instrument)
+        K low, 2-hop       1404        0   (fixed instrument)
+        K permuted         1404        0   STEP 5 mechanism removed
+        K high, 2-hop      1404        0   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 6000 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 1404; ALWAYS-scout pushes 1741 (568 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%     1424     1454     1435     1430   35
+           10%     1464     1492     1466     1464   84
+           25%     1541     1592     1563     1545   183
+           50%     1629     1692     1623     1632   328
+==============================================================================
+dense/1000
+STEP 2  1-hop instrument: 0 of 1000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 9947 (min 7513, max 13202); 0 at K == 0.25; K ranges 0.0811 .. 0.0857
+        arm              pushes   scouts
+        DEGREE             3812        0   (her gate)
+        K low, 1-hop       3812        0   (old instrument)
+        K low, 2-hop       3812        0   (fixed instrument)
+        K permuted         3812        0   STEP 5 mechanism removed
+        K high, 2-hop      3812        0   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 99482 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 3812; ALWAYS-scout pushes 4940 (803 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%     4673     4370     4781     4375   130
+           10%     4685     5132     4844     4560   196
+           25%     4854     5091     4663     4766   360
+           50%     4857     5020     4699     4914   532
+==============================================================================
+sparse/2000
+STEP 2  1-hop instrument: 491 of 2000 vertices have <=2 samples; 260 have K == 0.25 exactly; 231 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 25 (min 2, max 61); 37 at K == 0.25; K ranges 0.0520 .. 0.2500
+        arm              pushes   scouts
+        DEGREE             2796      277   (her gate)
+        K low, 1-hop       2938      241   (old instrument)
+        K low, 2-hop       2911      234   (fixed instrument)
+        K permuted         2899      273   STEP 5 mechanism removed
+        K high, 2-hop      2833      259   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 1212 edges
+==============================================================================
+grid/2000
+STEP 2  1-hop instrument: 4 of 1936 vertices have <=2 samples; 4 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 20 (min 8, max 20); 0 at K == 0.25; K ranges 0.0464 .. 0.1781
+        arm              pushes   scouts
+        DEGREE             2686     1208   (her gate)
+        K low, 1-hop       2686     1208   (old instrument)
+        K low, 2-hop       2686     1208   (fixed instrument)
+        K permuted         2686     1208   STEP 5 mechanism removed
+        K high, 2-hop      2686     1208   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 7568 edges
+==============================================================================
+clustered/2000
+STEP 2  1-hop instrument: 0 of 2000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 701 (min 303, max 1079); 0 at K == 0.25; K ranges 0.0173 .. 0.0438
+        arm              pushes   scouts
+        DEGREE             5247        0   (her gate)
+        K low, 1-hop       5258        1   (old instrument)
+        K low, 2-hop       5247        0   (fixed instrument)
+        K permuted         5247        0   STEP 5 mechanism removed
+        K high, 2-hop      5246        1   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 51918 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 5247; ALWAYS-scout pushes 6660 (1485 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%     5865     5907     5677     5853   174
+           10%     6158     6404     5775     6193   302
+           25%     6533     7336     6102     6638   596
+           50%     6887     6811     6402     6557   867
+==============================================================================
+road_like/2000
+STEP 2  1-hop instrument: 0 of 2000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 42 (min 42, max 42); 0 at K == 0.25; K ranges 0.0326 .. 0.1138
+        arm              pushes   scouts
+        DEGREE             2790        0   (her gate)
+        K low, 1-hop       2790        1   (old instrument)
+        K low, 2-hop       2790        0   (fixed instrument)
+        K permuted         2792        1   STEP 5 mechanism removed
+        K high, 2-hop      2793        1   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 12000 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 2790; ALWAYS-scout pushes 3545 (1169 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%     2869     2901     2859     2847   91
+           10%     2915     2999     2890     2924   164
+           25%     3053     3170     3083     3064   371
+           50%     3281     3362     3274     3214   671
+==============================================================================
+dense/2000
+STEP 2  1-hop instrument: 0 of 2000 vertices have <=2 samples; 0 have K == 0.25 exactly; 0 undefined (<2 edges)
+STEP 3  2-hop instrument: median samples 40156 (min 30725, max 48443); 0 at K == 0.25; K ranges 0.0823 .. 0.0845
+        arm              pushes   scouts
+        DEGREE             8555        0   (her gate)
+        K low, 1-hop       8555        0   (old instrument)
+        K low, 2-hop       8555        0   (fixed instrument)
+        K permuted         8555        0   STEP 5 mechanism removed
+        K high, 2-hop      8555        0   STEP 6 falsifier
+        all five arms exact vs Dijkstra; gate rate-matched at 0 edges
+STEP 7  degree gate admits 0 of 399506 edges here; sweeping K admission rate instead
+        ungated (same code, never scouts) pushes 8555; ALWAYS-scout pushes 11286 (1592 scouts)
+          rate    K low   K perm   smooth   K high   scouts(K low)
+            5%    10621    10975    10539    10316   283
+           10%    10663    11144    10811    10652   421
+           25%    10668    11426    11410    11462   711
+           50%    11334    11572    11559    11459   1119
+
+==============================================================================
+VERDICT, on priority-queue insertions (deterministic, lower is better)
+graph              degree   K 2hop   K perm   K high   reads
+sparse/1000          1445     1498     1492     1443   shuffled K does better -- K misleading here
+grid/1000            1309     1309     1309     1309   K no better than its own shuffle
+clustered/1000       2412     2412     2412     2412   gate never fires here
+road_like/1000       1404     1404     1404     1404   gate never fires here
+dense/1000           3812     3812     3812     3812   gate never fires here
+sparse/2000          2796     2911     2899     2833   shuffled K does better -- K misleading here
+grid/2000            2686     2686     2686     2686   K no better than its own shuffle
+clustered/2000       5247     5247     5247     5246   gate never fires here
+road_like/2000       2790     2790     2792     2793   gate never fires here
+dense/2000           8555     8555     8555     8555   gate never fires here
+
+  K beats its own permutation (carries information) : 0
+  K beats degree                                    : 0
+  K beats permutation but not degree                : 0
+
+  If K never beats its permutation, the curvature is not telling the gate
+  anything -- and that would be a result about the statistic, not about
+  the idea. If it beats the permutation but not degree, the curvature is
+  real but degree is the cheaper equivalent on these graphs.
+
+==============================================================================
+STEP 7 VERDICT  K-gated scouting where the degree gate is dead (pushes; lower is better)
+graph             rate  ungated    K low   K perm   smooth   K high   ALWAYS   reads
+clustered/1000      5%     2412     2578     2696     2515     2817     3230   beats shuffle only -- coherence, not curvature
+clustered/1000     10%     2412     2708     2716     2553     3040     3230   beats shuffle only -- coherence, not curvature
+clustered/1000     25%     2412     3069     2967     2845     3225     3230   no signal
+clustered/1000     50%     2412     3344     3257     3047     3285     3230   no signal
+road_like/1000      5%     1404     1424     1454     1435     1430     1741   K value matters beyond coherence; scouting still costs
+road_like/1000     10%     1404     1464     1492     1466     1464     1741   K value matters beyond coherence; scouting still costs
+road_like/1000     25%     1404     1541     1592     1563     1545     1741   K value matters beyond coherence; scouting still costs
+road_like/1000     50%     1404     1629     1692     1623     1632     1741   beats shuffle only -- coherence, not curvature
+dense/1000          5%     3812     4673     4370     4781     4375     4940   no signal
+dense/1000         10%     3812     4685     5132     4844     4560     4940   K value matters beyond coherence; scouting still costs
+dense/1000         25%     3812     4854     5091     4663     4766     4940   beats shuffle only -- coherence, not curvature
+dense/1000         50%     3812     4857     5020     4699     4914     4940   beats shuffle only -- coherence, not curvature
+clustered/2000      5%     5247     5865     5907     5677     5853     6660   beats shuffle only -- coherence, not curvature
+clustered/2000     10%     5247     6158     6404     5775     6193     6660   beats shuffle only -- coherence, not curvature
+clustered/2000     25%     5247     6533     7336     6102     6638     6660   beats shuffle only -- coherence, not curvature
+clustered/2000     50%     5247     6887     6811     6402     6557     6660   no signal
+road_like/2000      5%     2790     2869     2901     2859     2847     3545   beats shuffle only -- coherence, not curvature
+road_like/2000     10%     2790     2915     2999     2890     2924     3545   beats shuffle only -- coherence, not curvature
+road_like/2000     25%     2790     3053     3170     3083     3064     3545   K value matters beyond coherence; scouting still costs
+road_like/2000     50%     2790     3281     3362     3274     3214     3545   beats shuffle only -- coherence, not curvature
+dense/2000          5%     8555    10621    10975    10539    10316    11286   beats shuffle only -- coherence, not curvature
+dense/2000         10%     8555    10663    11144    10811    10652    11286   K value matters beyond coherence; scouting still costs
+dense/2000         25%     8555    10668    11426    11410    11462    11286   K value matters beyond coherence; scouting still costs
+dense/2000         50%     8555    11334    11572    11559    11459    11286   K value matters beyond coherence; scouting still costs
+
+  rows 24: K low beats ungated 0; beats its shuffle 20; beats coherent noise 9
+  The shuffle removes value AND spatial coherence. Coherent noise removes only the value.
+  Only 'beats coherent noise' is evidence that the curvature number itself is doing work.

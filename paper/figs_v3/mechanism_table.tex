@@ -1,0 +1,18 @@
+\begin{table}[tb]\centering\small\setlength{\tabcolsep}{3.5pt}
+\caption{Median operation counts at $n=5000$, same mean width and map container. Vertex scans omit skipped entries; heavy relaxations count evaluated heavy candidates.}
+\begin{tabular}{llrrr}
+\toprule
+Family & Controls & Vertex scans & Heavy relaxations & Phases \\ \midrule
+Sparse & List/list & 5,848 & 13,133 & 8 \\
+Sparse & Skip only & 5,094 & 11,404 & 8 \\
+Sparse & Heavy only & 5,848 & 11,063 & 8 \\
+Sparse & Both & 5,094 & 11,063 & 8 \\
+Clustered & List/list & 10,418 & 41,098 & 11 \\
+Clustered & Skip only & 5,556 & 21,978 & 11 \\
+Clustered & Heavy only & 10,418 & 19,800 & 11 \\
+Clustered & Both & 5,556 & 19,800 & 11 \\
+Dense & List/list & 29,540 & 7,383,816 & 2 \\
+Dense & Skip only & 8,271 & 2,065,778 & 2 \\
+Dense & Heavy only & 29,540 & 1,249,712 & 2 \\
+Dense & Both & 8,271 & 1,249,712 & 2 \\
+\bottomrule\end{tabular}\end{table}

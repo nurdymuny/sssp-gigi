@@ -1,0 +1,6 @@
+family,threshold,left,right,policy_regret,fixed_regret
+clustered,47.8835,mean_ring,fourary,1.0355836720050988,1.0355836720050988
+grid,48.0563,mean_ring,fourary,1.0,1.0
+independent_edge,-inf,fourary,mean_ring,1.229112674932714,1.229112674932714
+roadlike,48.0563,mean_ring,fourary,1.0194230957445458,1.0194230957445458
+sparse,48.0563,mean_ring,fourary,1.0314414315860456,1.0314414315860456

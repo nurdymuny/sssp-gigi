@@ -1,0 +1,17 @@
+[
+  {
+    "mutation": "control",
+    "exit_code": 0,
+    "regex_matched": true
+  },
+  {
+    "mutation": "remove_skip",
+    "exit_code": 101,
+    "regex_matched": true
+  },
+  {
+    "mutation": "remove_heavy_dedup",
+    "exit_code": 101,
+    "regex_matched": true
+  }
+]

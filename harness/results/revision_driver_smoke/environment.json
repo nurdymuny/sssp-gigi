@@ -1,0 +1,17 @@
+{
+  "started": "2026-09-16T18:41:51.2921548-07:00",
+  "os": "Microsoft Windows 11 Pro",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+  "l3_kib": 24576,
+  "ram": 68328595456,
+  "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)\nbinary: rustc\ncommit-hash: ded5c06cf21d2b93bffd5d884aa6e96934ee4234\ncommit-date: 2025-12-08\nhost: x86_64-pc-windows-msvc\nrelease: 1.92.0\nLLVM version: 21.1.3",
+  "binary": "69BB8504862E9D60E2E6FDA9F71ED4E1D17B64B6940D21605EC4A76E319433E5",
+  "protocol": "F9FB845F4185D21CDAC061B76A2DAD4DF8A912540B7B8F2D96DD80EBAC28263D",
+  "source": "17E36015302FE3D1F93ED3DA007FCCE51333A7D95713CD1E378CB50DBAEABF76",
+  "harness": "04E8851FBF9CBA2E368372C7A7B31B5E97AE4A28B95B486159AEAA00F0C27107",
+  "executable": "C:\\Users\\nurdm\\OneDrive\\Documents\\GeodesicLeet_DavisManifold_DavisFieldEquations\\sssp_ablation\\target\\release\\campaign.exe",
+  "priority": "Normal",
+  "affinity": "OS default",
+  "parallelism": 1,
+  "driver": "Documented reconstruction; independently built executable must match current source."
+}

@@ -1,0 +1,10 @@
+[package]
+name = "sssp_geometry_export"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sssp_rust = { path = "../../sssp_ablation/portable" }
+
+[profile.release]
+opt-level = 3

@@ -1,0 +1,12 @@
+\begin{table}[tb]\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\caption{Median solve milliseconds at scale and on DIMACS roads. Scale has three seeds and two sources; each road graph has six sources. Max/degree uses the Boost-documented width in our map solver; Selected calibrates that solver on source 0. Radix uses unchanged integer weights.}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Input & $n$ & Std heap & 4-ary & Map & Ring & $\meanw/\meand$ & Max/degree & Selected & Caliber & Radix \\ \midrule
+sparse\_fast & 10,000 & 2.85 & 2.96 & 1.81 & 1.62 & 1.73 & 1.81 & -- & 2.62 & -- \\
+sparse\_fast & 100,000 & 50.67 & 51.15 & 28.41 & 27.62 & 27.29 & 27.39 & -- & 45.90 & -- \\
+sparse\_fast & 1,000,000 & 796.94 & 801.00 & 449.36 & 445.24 & 450.58 & 447.29 & -- & 779.67 & -- \\
+NY & 264,346 & 51.62 & 54.71 & 34.14 & 31.29 & 35.87 & 29.68 & 29.72 & 42.61 & 66.92 \\
+BAY & 321,270 & 54.79 & 59.67 & 41.31 & 36.51 & 43.95 & 35.45 & 35.02 & 43.64 & 78.50 \\
+COL & 435,666 & 77.75 & 79.45 & 55.99 & 48.91 & 62.26 & 50.52 & 49.12 & 60.83 & 107.24 \\
+\bottomrule\end{tabular}\end{table}

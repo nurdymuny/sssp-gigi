@@ -1,0 +1,9 @@
+K controls complete: sparse seed=42
+K controls complete: clustered seed=42
+K controls complete: roadlike seed=42
+K controls complete: sparse seed=1729
+K controls complete: clustered seed=1729
+K controls complete: roadlike seed=1729
+K controls complete: sparse seed=2026
+K controls complete: clustered seed=2026
+K controls complete: roadlike seed=2026

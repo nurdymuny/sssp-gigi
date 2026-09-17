@@ -1,0 +1,4 @@
+﻿load_before=24
+load_after=33
+command=campaign.exe smoke C:/Users/nurdm/OneDrive/Documents/GeodesicLeet_DavisManifold_DavisFieldEquations/sssp_ablation/results/verify_repro/smoke
+exit=0

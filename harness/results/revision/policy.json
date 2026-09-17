@@ -1,0 +1,25 @@
+{
+  "train_graphs": 50,
+  "test_graphs": 106,
+  "threshold": 48.0563,
+  "left": "mean_ring",
+  "right": "fourary",
+  "best_fixed": "mean_ring",
+  "geometric_regret": 1.025636707449752,
+  "fixed_regret": 1.0960589118559152,
+  "worst_regret": 2.1818181818181817,
+  "feature_charged": [
+    {
+      "Q": 1,
+      "geomean_policy_over_fixed": 3.66628928574645
+    },
+    {
+      "Q": 10,
+      "geomean_policy_over_fixed": 1.2573528363102404
+    },
+    {
+      "Q": 100,
+      "geomean_policy_over_fixed": 0.9723836080090635
+    }
+  ]
+}

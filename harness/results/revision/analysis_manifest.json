@@ -1,0 +1,25 @@
+{
+  "graphs": 192,
+  "query_arms": 4638,
+  "validation_samples": 43956,
+  "calibration_samples": 9504,
+  "panels": {
+    "core": 54,
+    "density": 48,
+    "laws": 48,
+    "layout": 30,
+    "roads": 3,
+    "scale": 9
+  },
+  "source_sha256": {
+    "src\\revision.rs": "17e36015302fe3d1f93ed3da007fcce51333a7d95713cd1e378cb50dbaeabf76",
+    "src\\bin\\campaign.rs": "04e8851fbf9cba2e368372c7a7b31b5e97ae4a28b95b486159aeaa00f0c27107",
+    "REVISION_PROTOCOL.md": "f9fb845f4185d21cdac061b76a2dad4df8a912540b7b8f2d96dd80ebac28263d"
+  },
+  "measured_source_sha256": {
+    "src/revision.rs": "dfc17b45d0fc1da81bbbfdfcdf75e513d3b2f99e95d19adee543ecc4602f64e1",
+    "src/bin/campaign.rs": "b6aa7f693f83e3f1d892218e3833a12ed08314ea296e5d353f2f160ab5255b13",
+    "REVISION_PROTOCOL.md": "f9fb845f4185d21cdac061b76a2dad4df8a912540b7b8f2d96dd80ebac28263d"
+  },
+  "source_sha256_note": "Current source hashes; measured_source_sha256 refers to archived primary timing source."
+}
