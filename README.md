@@ -14,7 +14,7 @@ produced them, and the checks that constrain what they mean.
 ## The questions
 
 1. Does setting the Δ-stepping bucket width to the mean stored arc weight give a
-   useful low-cost default, once redundant bucket work has been removed?
+   useful low-cost default, with and without duplicate suppression?
 2. Does degree-gated one-hop lookahead improve a heap solver, or does it only
    reduce the overhead of unrestricted lookahead?
 3. Can a graph database supply the representation and features these decisions
@@ -22,9 +22,12 @@ produced them, and the checks that constrain what they mean.
 
 ## What the measurements show
 
-Speed ratios are against a standard-library binary-heap Dijkstra, measured in the
-same interleaved validation rounds, with every solver checked against reference
-distances before it is timed.
+Speed ratio = baseline time / method time; values above 1 mean the method ran
+faster. Width comparisons use the author's standard-library-heap Dijkstra as the
+baseline. Lookahead comparisons use a different baseline: the same custom heap
+with scouting disabled. Arms are measured in the same interleaved validation
+rounds, and every solver is checked against reference distances before it is
+timed.
 
 | Input | Result |
 |---|---|
@@ -38,8 +41,9 @@ distances before it is timed.
 Three qualifications travel with those numbers, and the paper states them at the
 same volume:
 
-- **Dense graphs favour the heap.** Duplicate suppression turns a catastrophic
-  slowdown into a moderate one; it does not turn it into a win.
+- **Dense graphs favour the heap.** Without suppression the mean rule takes about
+  16× the baseline's duration at *n* = 5,000; with it, about 1.8×. Suppression
+  removes most of the penalty, and the heap is still faster.
 - **The gain has a degree envelope.** At expected out-degree 2 the mean rule is
   0.85×; it peaks around degree 4–32 and is back to 1.01× by degree 64.
 - **A competing cheap rule does as well on roads.** The Boost-documented
@@ -47,16 +51,17 @@ same volume:
   contribution is the controlled comparison and the measured operating range,
   not a claim that one width statistic dominates.
 
-The lookahead result is negative and reported as such: the degree gate is a real
+The lookahead result is negative and reported as such. The degree gate is a real
 selector — negating its predicate is worse, and it beats random masks admitting
-exactly the same number of arcs — but no scouting arm beat the identical
-never-scout baseline on insertions or on the clock.
+exactly the same number of arcs. But on the 24 live core queries, degree-gated
+lookahead increased heap insertions in every case, and none of its query-median
+solve times improved on the identical never-scout baseline.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
-| `paper/` | The manuscript, its LaTeX source, and the generated tables and figures. Every number in the paper is emitted from the raw results by `harness/render_results.py`. |
+| `paper/` | The manuscript, its LaTeX source, and the generated tables and figures. Reported experimental results are derived from the archived measurements through the analysis and rendering scripts. |
 | `harness/` | The measurement study: solver sources, the campaign driver, the analysis scripts, and `results/` with per-round samples, operation counters, and run manifests. |
 | `site/` | The interactive companion: a static page with recorded-timing replay and live teaching solvers. `site/dist` is what is deployed. |
 
@@ -67,7 +72,21 @@ and which are not.
 
 ## Reproducing
 
-The solvers and the campaign build without the database dependency:
+These are two different tasks with different entry points.
+
+**Regenerate the published tables, figures, and manuscript** from the archived
+measurements. This runs no solvers: it reads `harness/results/revision` and
+writes into `paper/figs_v3` and `paper/benchmark_v3.html`.
+
+```bash
+pip install numpy pandas matplotlib pillow
+python harness/analyze_revision.py
+python harness/render_results.py
+cd paper && pdflatex -interaction=nonstopmode davis_manifold_sssp_v3.tex
+```
+
+**Run a new experiment.** The solvers and the campaign build without the
+database dependency:
 
 ```bash
 cargo test  --manifest-path harness/portable/Cargo.toml --all-targets
@@ -79,8 +98,10 @@ Panels are `core`, `density`, `laws`, `scale`, `roads`, and `layout`; each needs
 fresh output directory, and `roads` takes the data directory as a third argument.
 Run `python harness/download_roads.py` to fetch the official DIMACS inputs and
 record their digests; the compressed inputs used here are in `harness/data`.
-Then `python harness/analyze_revision.py` and `python harness/render_results.py`
-regenerate every table in the paper.
+
+The analysis scripts read the archived `results/revision` tree by default, so a
+new campaign is not analysed simply by running them — point their input root at
+the new output directory, keeping the schema described in `SCHEMA.md`.
 
 Run timed panels sequentially, with no concurrent compilation, rendering, or file
 synchronisation. One case in the recorded layout panel was disturbed by
@@ -108,12 +129,20 @@ for timing.
 
 ## The database side
 
-An arbitrary weighted digraph stores as one record per arc with base keys
+GIGI (Geometric Intrinsic Global Index) is the author's Rust database engine
+([source and documentation](https://github.com/nurdymuny/gigi), PolyForm
+Noncommercial License 1.0.0). It organises keyed records into *bundles*,
+separating identifying and indexed base fields from the fibre values associated
+with them, and provides statistical and geometric queries over those records.
+
+Here an arbitrary weighted digraph stores as one record per arc with base keys
 `edge_id`, `vertex_a`, `vertex_b` and a numeric `weight` fibre, with a separate
 bundle retaining isolated vertices. The study verifies every arc identity,
 endpoint, weight, the vertex registry, and all-source distances after snapshot
-and memory-mapped reload. The engine's normalised weight-variance statistic is
-assessed as an ordinary feature, with its elementary properties stated and with
-matched permutation nulls; it is not treated as a graph metric, and it did not
-produce a useful gate. Appendix B of the paper records which database interfaces
-apply to a vertex digraph and what each would require.
+and memory-mapped reload. The timed solvers run on extracted adjacency lists.
+
+The engine's normalised weight-variance statistic is assessed as an ordinary
+feature, with its elementary properties stated and with matched permutation
+nulls; it is not treated as a graph metric, and it did not produce a useful gate.
+Appendix B of the paper records which database interfaces apply to a vertex
+digraph and what each would require.

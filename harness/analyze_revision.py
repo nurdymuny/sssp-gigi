@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import NullLocator
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'results/revision'
-FIG=ROOT.parent/'figs_v3'; FIG.mkdir(exist_ok=True)
+FIG=ROOT.parent/'paper'/'figs_v3'; FIG.mkdir(exist_ok=True)
 panels=['core','density','laws','scale','roads','layout']
 samples=[]; cases=[]; counts=[]
 for panel in panels:
