@@ -1,7 +1,7 @@
 {
   "completed_utc": "2026-09-17T01:43:17.448536+00:00",
-  "pages": 15,
-  "words": 7026,
+  "pages": 16,
+  "words": 7286,
   "primary": {
     "graphs": 192,
     "query_arms": 4638,
@@ -51,12 +51,12 @@
       "sha256": "b4179f85633caef61ba0091e5c8673cfff674a5f996a939d758d8b59a80f583f"
     },
     "davis_manifold_sssp_v3.pdf": {
-      "bytes": 426403,
-      "sha256": "e06bb2dc18e38fd986c4fe191c9f2643046a72d60667fc8ea89ffbb215882bc9"
+      "bytes": 431072,
+      "sha256": "1d15d370308b80b0bc74e597d141bb1cf6035c092394e61a6714b77eb04b7ebd"
     },
     "davis_manifold_sssp_v3.tex": {
-      "bytes": 40411,
-      "sha256": "c5dd5aec03a02c56210ed6640dfaa9fbd42d54b487d351dc5346851b07fe7d5b"
+      "bytes": 42506,
+      "sha256": "91dc452831f1d096f74a5317f416b296ddf3c0e20fa65a98e1e566c9c8b3001a"
     },
     "figs_v3/amortization.tex": {
       "bytes": 292,
@@ -810,5 +810,7 @@
     "raw_samples_preserved": true,
     "retained_configurations": 29
   },
-  "driver_note": "run_campaign.ps1 is a documented reconstruction for future runs, not an archived original launch script."
+  "driver_note": "run_campaign.ps1 is a documented reconstruction for future runs, not an archived original launch script.",
+  "document_updated_utc": "2026-09-17T11:21:33.474478+00:00",
+  "document_update_note": "Added GIGI definition, database context, repository citation, and license name; cited Tamassia and Vismara on the separation of graph incidence and geometric information. Experimental data and measured source unchanged."
 }

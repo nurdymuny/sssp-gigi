@@ -37,7 +37,8 @@ road networks. Every measured solver is checked against reference distances.
 \AbstractFinding{}
 The study distinguishes a cheap useful default from a uniformly good rule, and
 a selector that limits overhead from lookahead that improves the underlying
-algorithm. GIGI supplies durable edge records and indexed incidence; its
+algorithm. GIGI (Geometric Intrinsic Global Index), a fiber-bundle database
+engine, supplies durable edge records and indexed incidence; its
 normalized weight-variance statistic is assessed as a feature, with no metric
 interpretation imposed on it.
 \end{abstract}
@@ -63,6 +64,21 @@ width calibration, mechanisms have removal controls, and storage semantics are
 verified with planted distances. We establish elementary invariants needed to
 interpret the experiments. We do not propose a new asymptotic SSSP bound or
 extrapolate sequential timings to parallel implementations.
+
+\paragraph{Database context.}
+GIGI (Geometric Intrinsic Global Index) is a Rust database engine developed by
+the author~\cite{gigi}. Its data model groups keyed records into \emph{bundles}:
+base fields identify and index records, while fiber fields hold their associated
+values. The fiber-bundle terminology expresses this separation of keys and
+values; readers need no differential-geometric background to follow the graph
+experiments. The engine integrates record storage and retrieval with statistical
+and geometric queries over those records. Here it supplies explicit weighted
+edge records, indexed incidence, and a normalized weight-variance feature.
+The timed shortest-path solvers run on extracted adjacency lists; the study
+evaluates these specific uses rather than the engine's full query language.
+Source code and documentation are available at
+\url{https://github.com/nurdymuny/gigi}, under the PolyForm Noncommercial
+License 1.0.0.
 
 \paragraph{Related implementations.}
 Rules that avoid a parameter search already exist. Parallel Boost documents
@@ -450,6 +466,15 @@ routine is conservative for a degree-only switch, which can read $n,m$ directly.
 No held-out result is used to refit the reported threshold.
 
 \section{GIGI as a graph substrate and feature provider}
+The database model permits several different notions of adjacency: shared
+indexed values, proximity between numeric record values, or explicitly stored
+graph endpoints. The SSSP input in this study uses the last of these. Declaring
+base and fiber fields alone does not identify the weighted digraph to be solved.
+Separating explicit graph incidence from geometric information has precedent
+in the interface design of JDSL/GeomLib~\cite{tamassia-vismara}.
+Here, this distinction determines which stored structure defines the
+shortest-path problem.
+
 \subsection{The graph must be identified explicitly}
 An edge bundle stores one record per arc with base keys \code{edge\_id},
 \code{vertex\_a}, and \code{vertex\_b}, and numeric fiber \code{weight}.
@@ -648,5 +673,14 @@ average time. \emph{ESA}, LNCS 2161, 230--241, 2001.
 \emph{The Shortest Path Problem: Ninth DIMACS Implementation Challenge}.
 DIMACS Series 74, AMS, 2009. Road collection:
 \url{https://www.diag.uniroma1.it/challenge9/download.shtml}.
+\bibitem{gigi} B. R. Davis. GIGI: Geometric Intrinsic Global Index.
+Rust database engine, source code and documentation, 2026.
+\url{https://github.com/nurdymuny/gigi}.
+Repository and PolyForm Noncommercial License 1.0.0 inspected September 17, 2026.
+\bibitem{tamassia-vismara} R. Tamassia and L. Vismara.
+A case study in algorithm engineering for geometric computing.
+\emph{International Journal of Computational Geometry \& Applications},
+11(1):15--70, 2001. Author preprint:
+\url{https://cs.brown.edu/cgc/jdsl/papers/geomlib.pdf}.
 \end{thebibliography}
 \end{document}
