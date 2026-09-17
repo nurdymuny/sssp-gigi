@@ -1,12 +1,11 @@
 import study from './data.mjs';
-import geometry from './geometry.mjs';
 import {createNetworkView} from './network-view.mjs';
 import {makeGraph,heapTrace,bucketTrace} from './engine.mjs';
 const $=id=>document.getElementById(id);
 const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
 const number=new Intl.NumberFormat('en-US');
 const methods={std_binary:['Std heap','Dijkstra','heap'],original_mean:['List','Append-only','list'],mean_map:['Map','Deduplicated','map'],mean_ring:['Ring','Cyclic buckets','ring'],max_maxdegree:['Max / degree','Width heuristic','max'],selected_grid:['Calibrated','Tuning excluded','selected']};
-const networkView=createNetworkView($('network-panels'),geometry,methods),replayDuration=8000;
+const networkView=createNetworkView($('network-panels'),methods),replayDuration=8000;
 const overview=[['sparse','original_mean'],['million','mean_ring'],['ny','mean_ring'],['bay','mean_ring'],['col','mean_ring'],['dense','original_mean'],['dense','mean_map']];
 $('overview-results').innerHTML=overview.map(([id,arm])=>{const c=study.scenarios.find(x=>x.id===id),v=c.summary.find(x=>x.arm===arm);return `<tr><td>${c.family==='sparse_fast'?'Sparse (scale)':c.family==='sparse'?'Sparse (core)':c.family==='dense'?'Dense (core)':'DIMACS '+c.family}</td><td>${number.format(c.n)}</td><td>${methods[arm][0]}</td><td>${v.ratio.toFixed(id==='dense'?3:2)}</td></tr>`}).join('');
 const stories={
@@ -24,11 +23,30 @@ options($('scenario'),study.scenarios.map(s=>s.id),id=>study.scenarios.find(s=>s
 function fillSeeds(){const seeds=[...new Set(scenario.runs.map(x=>x.seed))];options($('seed'),seeds);$('seed-wrap').hidden=scenario.panel==='roads';fillSources()}
 function fillSources(){const seed=Number($('seed').value);options($('source'),[...new Set(scenario.runs.filter(x=>x.seed===seed).map(x=>x.source))],x=>number.format(x));fillRounds()}
 function fillRounds(){options($('round'),scenario.runs.filter(x=>x.seed===Number($('seed').value)&&x.source===Number($('source').value)).map(x=>x.round),x=>String(x+1));selectRun()}
+let geometryRequest=null;
+function loadGeometry(){
+  return geometryRequest??=import('./geometry.mjs')
+    .then(m=>{networkView.setGeometry(m.default);return m.default})
+    .catch(e=>{geometryRequest=null;throw e});
+}
+// The panels need the deferred geometry module. Until it resolves they show a
+// loading state; the recorded timings beside them do not depend on it.
+function applyNetwork(){
+  const network=networkView.configure(scenario,run);
+  if(!network){
+    $('network-meta').textContent='Loading verified network geometry.';
+    loadGeometry().then(()=>{
+      if(applyNetwork())drawRace(raceMode==='ready'?1:Math.min(1,raceElapsed/replayDuration));
+    }).catch(()=>{$('network-meta').textContent='Network geometry could not be loaded. The recorded timings shown here are unaffected.'});
+    return false;
+  }
+  $('network-meta').textContent=`${network.view.layout==='geographic'?'Geographic coordinates':network.view.layout==='grid'?'100 × 100 lattice':'Schematic topology; positions have no geographic meaning'} · ${number.format(network.vertices)} displayed vertices / ${number.format(network.arcs)} arcs · ${network.view.sampling}.${network.unreachable?` ${number.format(network.unreachable)} displayed vertices are unreachable from this source.`:''}`;
+  return true;
+}
 function selectRun(){
   cancelAnimationFrame(raceFrame);raceMode='ready';raceElapsed=0;
   run=scenario.runs.find(x=>x.seed===Number($('seed').value)&&x.source===Number($('source').value)&&x.round===Number($('round').value));
-  const network=networkView.configure(scenario,run);
-  $('network-meta').textContent=`${network.view.layout==='geographic'?'Geographic coordinates':network.view.layout==='grid'?'100 × 100 lattice':'Schematic topology; positions have no geographic meaning'} · ${number.format(network.vertices)} displayed vertices / ${number.format(network.arcs)} arcs · ${network.view.sampling}.${network.unreachable?` ${number.format(network.unreachable)} displayed vertices are unreachable from this source.`:''}`;
+  applyNetwork();
   $('race').innerHTML=scenario.summary.filter(x=>run.times[x.arm]!==undefined).map(x=>{const [name,note,cls]=methods[x.arm];return `<div class="race-row" data-arm="${x.arm}"><div class="race-label">${name}<small>${note}</small></div><div class="race-track"><div class="race-bar ${cls}"></div></div><div class="race-value">${run.times[x.arm].toFixed(3)} ms<small>recorded</small></div></div>`}).join('');
   $('run-meta').textContent=`${number.format(scenario.n)} vertices · source ${number.format(run.source)} · round ${run.round+1}${scenario.panel==='roads'?'':` · seed ${run.seed}`}`;
   $('scenario-headline').textContent=stories[scenario.id][0];$('scenario-story').textContent=stories[scenario.id][1];
@@ -51,6 +69,8 @@ $('race-scrub').addEventListener('input',()=>{cancelAnimationFrame(raceFrame);ra
 $('race-reset').addEventListener('click',selectRun);
 $('scenario').addEventListener('change',()=>{scenario=study.scenarios.find(s=>s.id===$('scenario').value);fillSeeds()});
 $('seed').addEventListener('change',fillSources);$('source').addEventListener('change',fillRounds);$('round').addEventListener('change',selectRun);fillSeeds();
+// Warm the deferred geometry after first paint rather than before it.
+(window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>loadGeometry().catch(()=>{}));
 
 let graph,heap,bucket,step=0,toyTimer=0,toyPlaying=false;
 function stopToy(){clearTimeout(toyTimer);toyPlaying=false;$('toy-play').textContent='Replay traces'}

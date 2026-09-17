@@ -1,10 +1,21 @@
 // Distance-field reconstruction on verified graph geometry. No event timestamps are inferred.
-export function createNetworkView(container,geometry,methods){
+export function createNetworkView(container,methods){
   const W=600,H=410,BINS=64,palette=['#7da9ca','#649dc1','#488fb4','#317fa4','#226e90','#175c79'];
-  let panels=[],current=null,source=0;
+  let panels=[],current=null,source=0,geometry=null;
   const point=(g,i)=>[113+g.nodes[i*3]/65535*374,18+g.nodes[i*3+1]/65535*374];
   const band=(g,i)=>g.nodes[i*3+2]===65535?-1:Math.min(BINS-1,Math.floor(g.nodes[i*3+2]/65534*(BINS-1)));
+  function placeholders(scenario,run){
+    container.replaceChildren();panels=[];current=null;
+    for(const {arm} of scenario.summary){
+      if(run.times[arm]===undefined)continue;
+      const article=document.createElement('article');article.className='network-panel';article.dataset.arm=arm;
+      article.innerHTML=`<div class="network-panel-title"><b>${methods[arm][0]}</b><span>${run.times[arm].toFixed(3)} ms</span></div><canvas width="600" height="410" role="img" aria-label="${methods[arm][0]}: network geometry is still loading"></canvas><div class="network-panel-status"><span>Loading network geometry</span><span class="network-population"></span></div>`;
+      container.append(article);
+    }
+  }
+  function setGeometry(g){geometry=g}
   function configure(scenario,run){
+    if(!geometry){placeholders(scenario,run);return null}
     current=geometry[`${scenario.id}-${run.seed}-${run.source}`];source=run.source;
     if(!current)throw new Error('Missing verified network geometry');
     const g=current,n=g.nodes.length/3;
@@ -41,5 +52,5 @@ export function createNetworkView(container,geometry,methods){
       p.article.querySelector('.network-population').textContent=`${populated.toLocaleString()} / ${p.n.toLocaleString()} shown`;
     }
   }
-  return {configure,draw};
+  return {configure,draw,setGeometry};
 }
